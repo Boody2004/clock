@@ -51,7 +51,7 @@ const clockText = () =>{
 }
 setInterval(clockText, 1000)
 
-// dark mode
+// dark mode*******
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
 const iconTheme = 'bxs-sun'
