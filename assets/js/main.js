@@ -61,7 +61,7 @@ const clockText = () =>{
 }
 setInterval(clockText, 1000)
 
-
+// dark mode
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
 const iconTheme = 'bxs-sun'
@@ -78,10 +78,8 @@ if (selectedTheme) {
 }
 
 themeButton.addEventListener('click', () => {
-    // Add or remove the dark / icon theme
     document.body.classList.toggle(darkTheme)
     themeButton.classList.toggle(iconTheme)
-    // We save the theme and the current icon that the user chose
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
