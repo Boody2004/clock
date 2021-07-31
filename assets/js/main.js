@@ -36,18 +36,10 @@ const clockText = () =>{
     }else{
         ampm = 'AM'
     }  
-
-    if (hh == 0) {
-        hh = 12
-    }
-    if (hh < 10) {
-        hh =  `0${hh}`
-    }
-    
+    if (hh == 0) {hh = 12}
+    if (hh < 10) {hh =  `0${hh}`}
     textHour.innerHTML = `${hh}:`
-    if (mm < 10) {
-        mm = `0${mm}`
-    }
+    if (mm < 10) { mm = `0${mm}`}
 
     textMinutes.innerHTML = mm
     textAmpm.innerHTML = ampm
