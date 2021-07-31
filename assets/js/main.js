@@ -1,7 +1,6 @@
 const hour = document.getElementById('clock-hour'),
     minutes = document.getElementById('clock-minutes'),
     seconds = document.getElementById('clock-seconds')
-
 const clock = () =>{
     let date = new Date()
 
@@ -21,7 +20,6 @@ const textHour = document.getElementById('text-hour'),
     dateDay = document.getElementById('date-day'),
     dateMonth = document.getElementById('date-month'),
     dateYear = document.getElementById('date-year')
-
 const clockText = () =>{
     let date = new Date()
 
@@ -65,10 +63,8 @@ setInterval(clockText, 1000)
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
 const iconTheme = 'bxs-sun'
-
 const selectedTheme = localStorage.getItem('selected-theme')
 const selectedIcon = localStorage.getItem('selected-icon')
-
 const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
 const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bxs-moon' : 'bxs-sun'
 
